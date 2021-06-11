@@ -1,0 +1,8 @@
+@import url('https://use.typekit.net/udj0yfc.css');
+body {
+  margin: 0;
+  font-family: news-gothic-std,'Segoe UI', 'Roboto','Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
