@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   max-width: 1920px;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -19,6 +20,7 @@
   margin: 0 auto;
   margin-top: .33em;
   margin-bottom: .33em;
+  word-wrap: break-word;
 }
 
 .App-header {
@@ -45,12 +47,17 @@
   }
 }
 
+
+
 #PrizeFrame{
   min-height: 0;
 }
 
 #PrizeImg{
-  height: 15rem;
+  height: 10rem;
+}
+#PrizeResult{
+  height: 12rem;
 }
 
 .Capsule{
@@ -77,8 +84,13 @@
   
 }
 
+#Progress{
+  margin-bottom: 2rem;
+  line-height: 2rem;
+}
+
 .hidden { 
-  display:none; 
+  display:none !important; 
 }
 
 @-webkit-keyframes swing
@@ -114,11 +126,6 @@
         transform: translateX(0);
     }
 }
-@keyframes open
-{
-
-}
-
 
 @keyframes swing
 {

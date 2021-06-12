@@ -6,7 +6,7 @@
   display: inline-flex;
   width: 180px;
   height: 55px;
-  margin: 0 15px;
+  margin: 1rem 5rem;
 }
 .rollBtn{
   font-size: 19px;
@@ -42,3 +42,61 @@
 .rollBtn:hover{
   transform: translateZ(-25px) rotateX(-90deg);
 }
+
+.noClick{
+    pointer-events: none !important;
+}
+
+#ModalHelp{
+    min-width:100px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border:none;
+    background:#141414;
+    color:#fff;
+    font-size:19px;
+    cursor:pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.replayBtn{
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 1rem 5rem;
+  }
+  .replayBtn{
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  .replayBtn:before,
+  .replayBtn:after{
+    position: absolute;
+    content: "REPLAY";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  .replayBtn:before{
+    color: #fff;
+    background: #000;
+    transform: rotateY(0deg) translateZ(25px);
+  }
+  .replayBtn:after{
+    color: #000;
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  .replayBtn:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+  }

@@ -3,7 +3,7 @@ import { Component } from "react";
 class Header extends Component{
     render(){
         return(
-            <h1 id = 'title' class ='animate__animated animate__bounceInDown'>CAPSULE-PON</h1>
+            <h1 id = 'title' className ='animate__animated animate__bounceInDown'>CAPSULE-PON</h1>
         )
     }
 }

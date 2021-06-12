@@ -2,25 +2,29 @@ export const gachaData = [
     {
         name: 'KAIJU',
         img: './images/KAIJU.png',
-        rarity: 'common',
+        rarity: '★★',
+        rarityVal: 2,
         value: '5'
     },
     {
         name: 'NEO-TOKYO',
-        img: './images/NEOTOKYO.jpg',
-        rarity: 'uncommon',
+        img: './images/NEOTOKYO.png',
+        rarity: '★★★',
+        rarityVal: 3,
         value: '10'
     },
     {
-        name: 'OHMU',
-        img: './images/OHMU.jpg',
-        rarity: 'rare',
+        name: 'WIND VALLEY',
+        img: './images/OHMU.png',
+        rarity: '★★★★',
+        rarityVal: 4,
         value: '15'
     },
     {
         name: 'ROYALE',
-        img: './images/ROYALE.jpg',
-        rarity: 'rare',
+        img: './images/ROYALE.png',
+        rarity: '★★★★★',
+        rarityVal: 5,
         value: '15'
     }
 ];
