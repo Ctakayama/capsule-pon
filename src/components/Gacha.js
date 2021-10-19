@@ -3,14 +3,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '../stylesheets/Btn.css';
 import '../stylesheets/App.css';
-import {gachaWeight, gachaData} from '../data/gachaData';
+import {gachaData, dropRates} from '../data/gachaData';
 import {addStars, getWallet} from './Footer.js';
 
 class GetPrize extends Component{
     
     render(){
         let freshKey = Math.random();
-        let prizeNum = getRandomInt(gachaWeight);
+
+        //choose which rarity you get (1*, 2*, etc.)
+        let dropRarity = getRandomInt(dropRates);
+        // console.log('hello' + dropBuckets[Number(dropRarity)].length);
+        // let dropPrize = getRandomInt(dropBuckets[dropRarity].length);
+
+        let prizeNum = getRandomInt(dropRates);
+
+
         let prizeName = gachaData[Number(prizeNum)].name;
         let prizeImg = gachaData[Number(prizeNum)].img;
         let prizeRarity = gachaData[Number(prizeNum)].rarity;
@@ -34,9 +42,9 @@ function getRandomInt(prob){
     
     let i, sum = 0, r = Math.random();
     for (i in prob){
-        sum += prob[i];
+        sum += prob[i][0];
+        console.log("greater than or equal to: " + prob[i][1]);
         if(r <=sum){
-            console.log(sum);
             return i;
         }
     }
@@ -65,15 +73,16 @@ function wobbleReplay(){
 function hideCapsule(){
     document.getElementById('CapsuleTop').classList.add('hidden');
     document.getElementById('CapsuleBot').classList.add('hidden');
+
     document.getElementById('CapsuleFrame').style.height = '0rem';
     document.getElementById('PrizeFrame').classList.remove('hidden');
+
     document.getElementById('Roll').classList.remove('noClick');
     checkEndGame(getWallet());
 }
 function showCapsule(){
     document.getElementById('CapsuleBot').classList.remove('animate_headShake');
     document.getElementById('CapsuleBot').classList.add('animate_headShake');
-
 
     document.getElementById('CapsuleTop').classList.remove('hidden');
     document.getElementById('CapsuleBot').classList.remove('hidden');

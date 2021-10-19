@@ -13,7 +13,6 @@ function App() {
       <Header/>
       <Gacha/>
       <Footer/>
-      {/* <GameOver/> */}
     </div>
   );
 }
