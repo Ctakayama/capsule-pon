@@ -4,8 +4,8 @@
     margin: 0 auto;
     top: 0;
     left: 0;
-    height: 100vh;
-    width: 100vw;
+    height: calc(3vw + 4rem);
+    width: calc(10vw + 6rem);
     color:rgb(196, 206, 233);
     background-color: rgba(0,0,0,0.9);
 }

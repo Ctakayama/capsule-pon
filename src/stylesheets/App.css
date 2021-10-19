@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  max-width: 1920px;
+
   overflow-x: hidden;
 }
 
@@ -16,11 +16,19 @@
 }
 
 #title{
-  font-size: 8rem;
+  font-size: calc(3vw + 5rem);
   margin: 0 auto;
   margin-top: .33em;
   margin-bottom: .33em;
   word-wrap: break-word;
+}
+
+@media only screen and (min-width: 3000px){
+  #title{
+    font-size: calc(4vw + 8rem);
+    transition: ease all .3s;
+  }
+  
 }
 
 .App-header {
@@ -47,7 +55,9 @@
   }
 }
 
-
+.body-Text{
+  font-size: clamp(1.5rem, 1.8vw, 4rem); 
+}
 
 #PrizeFrame{
   min-height: 0;
@@ -57,9 +67,8 @@
   height: 10rem;
 }
 #PrizeResult{
-  height: 12rem;
+  height: calc(max(4vw, 4vh) + 10rem);
 }
-
 .Capsule{
   height: 6rem;
   width: auto;
@@ -87,6 +96,10 @@
 #Progress{
   margin-bottom: 2rem;
   line-height: 2rem;
+}
+
+.result-Text{
+  line-height: calc(max(2vw, 2vh) + 1rem) !important;
 }
 
 .hidden { 

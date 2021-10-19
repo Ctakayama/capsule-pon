@@ -6,9 +6,9 @@ let moneyLeft = 100;
 class Footer extends Component{
     render(){
         return(
-            <div class = 'animate__animated animate__fadeIn animate__delay-1s' id = 'Progress'>Roll the most ★'s without running out of money.<br></br>
+            <div class = 'animate__animated animate__fadeIn animate__delay-1s body-Text result-Text' id = 'Progress'>Roll the most ★'s without running out of money.<br></br>
             <details>
-            <summary>drop rates</summary>
+            <summary class = 'body-Text'>drop rates</summary>
             ★★ = 60%
             ★★★ = 20%
             ★★★★ = 15%
@@ -29,7 +29,7 @@ export const addStars = (num)=>{
 }
 
 function updateProgress(){
-    ReactDOM.render(<span className = 'animate__animated animate__rotateInUpLeft'>★'s acquired: {numStars} <br></br>
+    ReactDOM.render(<span className = 'animate__animated animate__rotateInUpLeft body-Text result-Text'>★'s acquired: {numStars} <br></br>
     $ remaining: {moneyLeft}
     </span>,
     document.getElementById('Progress'))

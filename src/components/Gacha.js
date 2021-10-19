@@ -20,8 +20,8 @@ class GetPrize extends Component{
             
             <div id = 'PrizeResult' key = {freshKey}>
                 <img src= {prizeImg} alt = 'PrizeImg' id = 'PrizeImg' className ='animate__animated  animate__tada'></img><br></br>
-                <span>"{prizeName}"</span><br></br>
-                <span>Rarity: {prizeRarity}</span><br></br>
+                <span className = 'body-Text'>"{prizeName}"</span><br></br>
+                <span className = 'body-Text'>Rarity: {prizeRarity}</span><br></br>
 
             </div>
             

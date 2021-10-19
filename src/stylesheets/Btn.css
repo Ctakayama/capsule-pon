@@ -4,12 +4,12 @@
 .rollBtn{
   position: relative;
   display: inline-flex;
-  width: 180px;
-  height: 55px;
+  width: calc(10vw + 6rem);
+  height: calc(3vw + 4rem);
   margin: 1rem 5rem;
 }
 .rollBtn{
-  font-size: 19px;
+  font-size: calc(3vw + 1rem);
   letter-spacing: 1px;
   transform-style: preserve-3d;
   transform: translateZ(-25px);
@@ -21,8 +21,8 @@
 .rollBtn:after{
   position: absolute;
   content: "ROLL";
-  height: 55px;
-  width: 180px;
+  height: calc(3vw + 4rem);
+  width: calc(10vw + 6rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,12 +62,12 @@
 .replayBtn{
     position: relative;
     display: inline-flex;
-    width: 180px;
-    height: 55px;
+    height: calc(3vw + 4rem);
+    width: calc(10vw + 6rem);
     margin: 1rem 5rem;
   }
   .replayBtn{
-    font-size: 19px;
+    font-size: calc(2vw + 1rem);
     letter-spacing: 1px;
     transform-style: preserve-3d;
     transform: translateZ(-25px);
@@ -79,8 +79,8 @@
   .replayBtn:after{
     position: absolute;
     content: "REPLAY";
-    height: 55px;
-    width: 180px;
+    height: calc(3vw + 4rem);
+    width: calc(10vw + 6rem);
     display: flex;
     align-items: center;
     justify-content: center;
